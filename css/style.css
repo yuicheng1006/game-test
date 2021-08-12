@@ -1,0 +1,1155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  min-width: 320px;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+body img {
+  width: 80%;
+}
+
+#wrap {
+  position: relative;
+  max-width: 60vh;
+  min-width: 320px;
+  height: 100%;
+  min-height: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#wrap p {
+  color: #000;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+}
+
+#typetype {
+  position: absolute;
+  top: 82%;
+  max-width: 400px;
+  width: 90vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 9;
+}
+
+#typetype span {
+  color: #000;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+}
+
+#typetype.typeOs span {
+  color: #fff;
+}
+
+#select_wrap {
+  position: relative;
+}
+
+#select_wrap img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  pointer-events: none;
+}
+
+#select_wrap button {
+  width: 25%;
+  height: 50vw;
+  max-height: 300px;
+  min-height: 160px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.btn_box {
+  border-radius: 20px;
+  padding: 8px 16px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.comment_wrap {
+  position: absolute;
+  background-color: #fff;
+  top: 80%;
+  width: 100%;
+  height: 100px;
+}
+
+.comment_os {
+  background-color: #4f4944;
+}
+
+.comment_os p {
+  color: #fff !important;
+}
+
+.comment_name {
+  display: inline-block;
+  padding: 8px 10px;
+  background: #7db9de;
+  border-radius: 6px;
+  position: absolute;
+  top: -20px;
+  color: #fff;
+}
+
+.comment_name.other {
+  background: #749f8d;
+}
+
+.next_step {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+}
+
+.scenes .cut {
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.divine_cards {
+  position: absolute;
+  bottom: 10%;
+}
+
+.divine_buttons {
+  position: absolute;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.divine_buttons button {
+  width: 25%;
+  height: 25vw;
+  max-height: 300px;
+  min-height: 148px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.divine_buttons button[id='1'] {
+  left: 0;
+}
+
+.divine_buttons button[id='2'] {
+  left: 25%;
+}
+
+.divine_buttons button[id='3'] {
+  left: 50%;
+}
+
+.divine_buttons button[id='4'] {
+  left: 75%;
+}
+
+.food_buttons button {
+  display: block;
+}
+
+.game_wrap {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  background-image: url("../../image/bg/game.png");
+}
+
+.game_wrap .actor_attacked {
+  min-width: 200px;
+  width: 40%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.game_wrap .girls_attack {
+  width: 50px;
+  top: -150px;
+  -webkit-animation: catcat 1s linear infinite;
+          animation: catcat 1s linear infinite;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  cursor: pointer;
+}
+
+@-webkit-keyframes catcat {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes catcat {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+.attack0 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.attack1 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.attack2 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.attack3 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.attack4 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.attack5 {
+  position: absolute;
+  offset-path: path("M533.1-52.9c-17.9,2.8-36.4,8.2-39.5,19.7c-3.7,13.8,17.3,25.6,13.2,36.7c-5.3,14-41.1,0.5-66.8,21.6\a 	c-13,10.7-25.2,31.7-18.8,51.7c5.3,16.8,27.1,15.1,29.2,28.2c1.9,12.3-15.6,18-28.2,40.4c-11.1,19.8-8.3,34.5-11.3,48.9\a 	c-4.4,21.2-23.2,49.3-180.3,85.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.attack6 {
+  position: absolute;
+  offset-path: path("M537.7,229.8c-38.8-21.6-55.7-19.3-64-13.2c-10.4,7.7-6.7,21-17.9,27.3c-16.6,9.3-34.3-14.9-54.5-7.5\a 	c-16.3,6-12.1,24.3-34.8,41.4c-12.4,9.3-20,8.7-35.7,15c-15.7,6.4-36.8,18.2-160.3,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.attack7 {
+  position: absolute;
+  offset-path: path("M530.4,322.9c-26.3-14.5-40.1-13.1-48-8.5c-8.8,5.2-7.5,13.1-16.9,17.9c-13.8,7-22.9-6.6-46.1-5.6\a 	c-19.5,0.8-20.8,10.8-44.2,12.2c-15.9,1-19.2-3.4-32-2.8c-12,0.5-29.2,5.2-170.8,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.attack8 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.attack9 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.attack10 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.attack11 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.attack12 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.attack13 {
+  position: absolute;
+  offset-path: path("M533.1-52.9c-17.9,2.8-36.4,8.2-39.5,19.7c-3.7,13.8,17.3,25.6,13.2,36.7c-5.3,14-41.1,0.5-66.8,21.6\a 	c-13,10.7-25.2,31.7-18.8,51.7c5.3,16.8,27.1,15.1,29.2,28.2c1.9,12.3-15.6,18-28.2,40.4c-11.1,19.8-8.3,34.5-11.3,48.9\a 	c-4.4,21.2-23.2,49.3-180.3,85.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.attack14 {
+  position: absolute;
+  offset-path: path("M537.7,229.8c-38.8-21.6-55.7-19.3-64-13.2c-10.4,7.7-6.7,21-17.9,27.3c-16.6,9.3-34.3-14.9-54.5-7.5\a 	c-16.3,6-12.1,24.3-34.8,41.4c-12.4,9.3-20,8.7-35.7,15c-15.7,6.4-36.8,18.2-160.3,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.attack15 {
+  position: absolute;
+  offset-path: path("M530.4,322.9c-26.3-14.5-40.1-13.1-48-8.5c-8.8,5.2-7.5,13.1-16.9,17.9c-13.8,7-22.9-6.6-46.1-5.6\a 	c-19.5,0.8-20.8,10.8-44.2,12.2c-15.9,1-19.2-3.4-32-2.8c-12,0.5-29.2,5.2-170.8,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+
+.attack16 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.attack17 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+
+.attack18 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.attack19 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
+}
+
+.attack20 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.attack21 {
+  position: absolute;
+  offset-path: path("M533.1-52.9c-17.9,2.8-36.4,8.2-39.5,19.7c-3.7,13.8,17.3,25.6,13.2,36.7c-5.3,14-41.1,0.5-66.8,21.6\a 	c-13,10.7-25.2,31.7-18.8,51.7c5.3,16.8,27.1,15.1,29.2,28.2c1.9,12.3-15.6,18-28.2,40.4c-11.1,19.8-8.3,34.5-11.3,48.9\a 	c-4.4,21.2-23.2,49.3-180.3,85.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 10.5s;
+          animation-delay: 10.5s;
+}
+
+.attack22 {
+  position: absolute;
+  offset-path: path("M537.7,229.8c-38.8-21.6-55.7-19.3-64-13.2c-10.4,7.7-6.7,21-17.9,27.3c-16.6,9.3-34.3-14.9-54.5-7.5\a 	c-16.3,6-12.1,24.3-34.8,41.4c-12.4,9.3-20,8.7-35.7,15c-15.7,6.4-36.8,18.2-160.3,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.attack23 {
+  position: absolute;
+  offset-path: path("M530.4,322.9c-26.3-14.5-40.1-13.1-48-8.5c-8.8,5.2-7.5,13.1-16.9,17.9c-13.8,7-22.9-6.6-46.1-5.6\a 	c-19.5,0.8-20.8,10.8-44.2,12.2c-15.9,1-19.2-3.4-32-2.8c-12,0.5-29.2,5.2-170.8,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 11.5s;
+          animation-delay: 11.5s;
+}
+
+.attack24 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.attack25 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 12.5s;
+          animation-delay: 12.5s;
+}
+
+.attack26 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.attack27 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 13.5s;
+          animation-delay: 13.5s;
+}
+
+.attack28 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.attack29 {
+  position: absolute;
+  offset-path: path("M533.1-52.9c-17.9,2.8-36.4,8.2-39.5,19.7c-3.7,13.8,17.3,25.6,13.2,36.7c-5.3,14-41.1,0.5-66.8,21.6\a 	c-13,10.7-25.2,31.7-18.8,51.7c5.3,16.8,27.1,15.1,29.2,28.2c1.9,12.3-15.6,18-28.2,40.4c-11.1,19.8-8.3,34.5-11.3,48.9\a 	c-4.4,21.2-23.2,49.3-180.3,85.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 14.5s;
+          animation-delay: 14.5s;
+}
+
+.attack30 {
+  position: absolute;
+  offset-path: path("M537.7,229.8c-38.8-21.6-55.7-19.3-64-13.2c-10.4,7.7-6.7,21-17.9,27.3c-16.6,9.3-34.3-14.9-54.5-7.5\a 	c-16.3,6-12.1,24.3-34.8,41.4c-12.4,9.3-20,8.7-35.7,15c-15.7,6.4-36.8,18.2-160.3,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.attack31 {
+  position: absolute;
+  offset-path: path("M530.4,322.9c-26.3-14.5-40.1-13.1-48-8.5c-8.8,5.2-7.5,13.1-16.9,17.9c-13.8,7-22.9-6.6-46.1-5.6\a 	c-19.5,0.8-20.8,10.8-44.2,12.2c-15.9,1-19.2-3.4-32-2.8c-12,0.5-29.2,5.2-170.8,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 15.5s;
+          animation-delay: 15.5s;
+}
+
+.attack32 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.attack33 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 16.5s;
+          animation-delay: 16.5s;
+}
+
+.attack34 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.attack35 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 17.5s;
+          animation-delay: 17.5s;
+}
+
+.attack36 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.attack37 {
+  position: absolute;
+  offset-path: path("M533.1-52.9c-17.9,2.8-36.4,8.2-39.5,19.7c-3.7,13.8,17.3,25.6,13.2,36.7c-5.3,14-41.1,0.5-66.8,21.6\a 	c-13,10.7-25.2,31.7-18.8,51.7c5.3,16.8,27.1,15.1,29.2,28.2c1.9,12.3-15.6,18-28.2,40.4c-11.1,19.8-8.3,34.5-11.3,48.9\a 	c-4.4,21.2-23.2,49.3-180.3,85.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 18.5s;
+          animation-delay: 18.5s;
+}
+
+.attack38 {
+  position: absolute;
+  offset-path: path("M537.7,229.8c-38.8-21.6-55.7-19.3-64-13.2c-10.4,7.7-6.7,21-17.9,27.3c-16.6,9.3-34.3-14.9-54.5-7.5\a 	c-16.3,6-12.1,24.3-34.8,41.4c-12.4,9.3-20,8.7-35.7,15c-15.7,6.4-36.8,18.2-160.3,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+}
+
+.attack39 {
+  position: absolute;
+  offset-path: path("M530.4,322.9c-26.3-14.5-40.1-13.1-48-8.5c-8.8,5.2-7.5,13.1-16.9,17.9c-13.8,7-22.9-6.6-46.1-5.6\a 	c-19.5,0.8-20.8,10.8-44.2,12.2c-15.9,1-19.2-3.4-32-2.8c-12,0.5-29.2,5.2-170.8,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 19.5s;
+          animation-delay: 19.5s;
+}
+
+.attack40 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.attack41 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 20.5s;
+          animation-delay: 20.5s;
+}
+
+.attack42 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 21s;
+          animation-delay: 21s;
+}
+
+.attack43 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 21.5s;
+          animation-delay: 21.5s;
+}
+
+.attack44 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+}
+
+.attack45 {
+  position: absolute;
+  offset-path: path("M533.1-52.9c-17.9,2.8-36.4,8.2-39.5,19.7c-3.7,13.8,17.3,25.6,13.2,36.7c-5.3,14-41.1,0.5-66.8,21.6\a 	c-13,10.7-25.2,31.7-18.8,51.7c5.3,16.8,27.1,15.1,29.2,28.2c1.9,12.3-15.6,18-28.2,40.4c-11.1,19.8-8.3,34.5-11.3,48.9\a 	c-4.4,21.2-23.2,49.3-180.3,85.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 22.5s;
+          animation-delay: 22.5s;
+}
+
+.attack46 {
+  position: absolute;
+  offset-path: path("M537.7,229.8c-38.8-21.6-55.7-19.3-64-13.2c-10.4,7.7-6.7,21-17.9,27.3c-16.6,9.3-34.3-14.9-54.5-7.5\a 	c-16.3,6-12.1,24.3-34.8,41.4c-12.4,9.3-20,8.7-35.7,15c-15.7,6.4-36.8,18.2-160.3,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 23s;
+          animation-delay: 23s;
+}
+
+.attack47 {
+  position: absolute;
+  offset-path: path("M530.4,322.9c-26.3-14.5-40.1-13.1-48-8.5c-8.8,5.2-7.5,13.1-16.9,17.9c-13.8,7-22.9-6.6-46.1-5.6\a 	c-19.5,0.8-20.8,10.8-44.2,12.2c-15.9,1-19.2-3.4-32-2.8c-12,0.5-29.2,5.2-170.8,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 23.5s;
+          animation-delay: 23.5s;
+}
+
+.attack48 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.attack49 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 24.5s;
+          animation-delay: 24.5s;
+}
+
+.attack50 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 25s;
+          animation-delay: 25s;
+}
+
+.attack51 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 25.5s;
+          animation-delay: 25.5s;
+}
+
+.attack52 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 26s;
+          animation-delay: 26s;
+}
+
+.attack53 {
+  position: absolute;
+  offset-path: path("M533.1-52.9c-17.9,2.8-36.4,8.2-39.5,19.7c-3.7,13.8,17.3,25.6,13.2,36.7c-5.3,14-41.1,0.5-66.8,21.6\a 	c-13,10.7-25.2,31.7-18.8,51.7c5.3,16.8,27.1,15.1,29.2,28.2c1.9,12.3-15.6,18-28.2,40.4c-11.1,19.8-8.3,34.5-11.3,48.9\a 	c-4.4,21.2-23.2,49.3-180.3,85.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 26.5s;
+          animation-delay: 26.5s;
+}
+
+.attack54 {
+  position: absolute;
+  offset-path: path("M537.7,229.8c-38.8-21.6-55.7-19.3-64-13.2c-10.4,7.7-6.7,21-17.9,27.3c-16.6,9.3-34.3-14.9-54.5-7.5\a 	c-16.3,6-12.1,24.3-34.8,41.4c-12.4,9.3-20,8.7-35.7,15c-15.7,6.4-36.8,18.2-160.3,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 27s;
+          animation-delay: 27s;
+}
+
+.attack55 {
+  position: absolute;
+  offset-path: path("M530.4,322.9c-26.3-14.5-40.1-13.1-48-8.5c-8.8,5.2-7.5,13.1-16.9,17.9c-13.8,7-22.9-6.6-46.1-5.6\a 	c-19.5,0.8-20.8,10.8-44.2,12.2c-15.9,1-19.2-3.4-32-2.8c-12,0.5-29.2,5.2-170.8,25.4");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 27.5s;
+          animation-delay: 27.5s;
+}
+
+.attack56 {
+  position: absolute;
+  offset-path: path("M-97.3,307.9c5.8,26.3,12.4,33.2,17.9,33.9c8.1,0.9,12.2-12.1,33.9-27.3c8.5-6,15.7-10.9,26.3-13.2\a 	c1.7-0.4,28.7-5.7,38.6,7.5c9.8,13.1-5.7,32.9,2.8,41.4c7.4,7.4,25.7,0.5,33.9-3.8c2.8-1.5,8.7-4.9,23.5-21.6\a 	c17.6-19.9,17.3-24.1,24.5-29.2c8.5-5.9,23.4-10.1,71.7-0.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 28s;
+          animation-delay: 28s;
+}
+
+.attack57 {
+  position: absolute;
+  offset-path: path("M-44.6,196c8.9,25.6,14.9,30.4,18.8,30.1c7.3-0.6,7.8-19.5,18.8-23.5c10.1-3.7,16.8,17.6,32.9,16.9\a 	c6.2-0.2,8.3-3.3,16.9-2.8c2.9,0.2,10.3,0.5,16,4.7c9.2,6.7,5.2,16.9,12.2,29.2c5.8,10.1,17.5,18.8,29.2,19.7\a 	c16.1,1.3,33.4-12.4,81.4-1.9");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 28.5s;
+          animation-delay: 28.5s;
+}
+
+.attack58 {
+  position: absolute;
+  offset-path: path("M-29.6,15.4c3.2,9.3,9.2,21.3,20.7,26.3c13.8,6,22.8-3.6,44.2,0c5.1,0.8,29.6,5.5,34.8,20.7\a 	c3.7,10.8-6.2,16.1-8.5,33.9c-2.6,20.4,6.4,46.1,22.6,53.6c16.6,7.7,29.2-9.4,46.1-5.6c14.8,3.2,32.4,22.2,43.3,134");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 29s;
+          animation-delay: 29s;
+}
+
+.attack59 {
+  position: absolute;
+  offset-path: path("M146.3-65.5c26.9,12,33.4,22.9,33.9,31c0.9,17.7-26.9,26-27.3,49.8c-0.2,11.7,6.5,11.1,9.4,30.1\a 	c3,19.6-3.5,24.2,0.9,39.5c3.5,12,8.5,13,16,27.3c7.2,13.8,8.9,25.3,11.3,40.4c6.1,39.7,1.2,81.9-0.9,137.8");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 29.5s;
+          animation-delay: 29.5s;
+}
+
+.attack60 {
+  position: absolute;
+  offset-path: path("M259.1-70.2c0.5,20.7-3.8,35.7-8,45.6c-8.7,20.7-18.5,24.3-23,43.8c-1.2,5-5.4,23.4,2.8,25.4\a 	c9.6,21,26.4,20.2,28.2,34.8c1.9,15.1-15.5,20.2-17.9,42.3c-1.4,13.4,4,20.1,6.6,31c3.6,15.6,1.1,39.5-27.3,135.2");
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  offset-anchor: center bottom;
+  -webkit-animation: red-ball 5s linear alternate forwards;
+          animation: red-ball 5s linear alternate forwards;
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+
+@-webkit-keyframes red-ball {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes red-ball {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.modal-body {
+  margin: auto;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
+.modal-content i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal-content .modal-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

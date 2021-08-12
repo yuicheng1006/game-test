@@ -1,0 +1,188 @@
+body {
+  min-width: 320px;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: $primary-color;
+  img {
+    width: 80%;
+  }
+}
+#wrap {
+  position: relative;
+  max-width: 60vh;
+  min-width: 320px;
+  height: 100%;
+  // max-height: 180vw;
+  min-height: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  p {
+    color: #000;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+  }
+}
+#typetype {
+  position: absolute;
+  top: 82%;
+  max-width: 400px;
+  width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  span {
+    color: #000;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+  }
+  &.typeOs span {
+    color: #fff;
+  }
+}
+#select_wrap {
+  position: relative;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    pointer-events: none;
+  }
+  button {
+    width: 25%;
+    height: 50vw;
+    max-height: 300px;
+    min-height: 160px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+}
+.btn_box {
+  border-radius: 20px;
+  padding: 8px 16px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.comment_wrap {
+  position: absolute;
+  background-color: #fff;
+  top: 80%;
+  width: 100%;
+  height: 100px;
+}
+.comment_os {
+  background-color: #4f4944;
+  p {
+    color: #fff !important;
+  }
+}
+.comment_name {
+  display: inline-block;
+  padding: 8px 10px;
+  background: #7db9de;
+  border-radius: 6px;
+  position: absolute;
+  top: -20px;
+  color: #fff;
+  &.other {
+    background: #749f8d;
+  }
+}
+
+.next_step {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+}
+.scenes {
+  .cut {
+    position: relative;
+    // background-image: url('/image/bg/street.jpeg');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+  }
+}
+.divine_cards {
+  position: absolute;
+  bottom: 10%;
+}
+.divine_buttons {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  width: 100%;
+  button {
+    width: 25%;
+    height: 25vw;
+    max-height: 300px;
+    min-height: 148px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    &[id='1'] {
+      left: 0;
+    }
+    &[id='2'] {
+      left: 25%;
+    }
+    &[id='3'] {
+      left: 50%;
+    }
+    &[id='4'] {
+      left: 75%;
+    }
+  }
+}
+
+.food_buttons {
+  button {
+    display: block;
+  }
+}
+.game_wrap {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  background-image: url('../../image/bg/game.png');
+  .actor_attacked {
+    min-width: 200px;
+    width: 40%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .girls_attack {
+    width: 50px;
+    top: -150px;
+    animation: catcat 1s linear infinite;
+    transform-origin: bottom center;
+    animation-direction: alternate;
+    cursor: pointer;
+  }
+}
+@keyframes catcat {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
