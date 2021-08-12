@@ -322,7 +322,7 @@ body img {
   background-size: cover;
   background-position: top;
   height: 100vh;
-  background-image: url("./image/bg/game.png");
+  background-image: url("../image/bg/game.png");
 }
 
 .game_wrap .actor_attacked {
