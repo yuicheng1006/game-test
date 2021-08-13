@@ -170,12 +170,30 @@ body {
   }
   .girls_attack {
     width: 50px;
-    top: -150px;
+    // top: -150px;
     animation: catcat 1s linear infinite;
     transform-origin: bottom center;
     animation-direction: alternate;
     cursor: pointer;
   }
+}
+#motionPath {
+  overflow: visible;
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  transform: translateX(90%);
+}
+
+#motionPath path {
+  // stroke-width: 2;
+  // stroke: gray;
+}
+
+#motionPath .astronaut {
+  visibility: hidden;
 }
 @keyframes catcat {
   0% {
