@@ -360,8 +360,6 @@ body img {
 }
 
 #motionPath path {
-  stroke-width: 2;
-  stroke: gray;
   pointer-events: none;
 }
 
