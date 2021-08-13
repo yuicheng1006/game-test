@@ -356,6 +356,13 @@ body img {
   right: 0%;
   -webkit-transform: translateX(90%);
           transform: translateX(90%);
+  pointer-events: none;
+}
+
+#motionPath path {
+  stroke-width: 2;
+  stroke: gray;
+  pointer-events: none;
 }
 
 #motionPath .astronaut {
